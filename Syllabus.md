@@ -15,8 +15,11 @@ Course Site: https://portal.bakersfieldcollege.edu/
 
 ## Course Information
 Building/Room: Business 11   
-Tuesday 04:20pm - 05:45pm        
-Thursday 04:20pm - 05:45pm     
+
+Day | Time
+------------ | -------------
+Tuesday | 04:20pm - 05:45pm        
+Thursday | 04:20pm - 05:45pm     
 
 
 ## Office Hours
@@ -151,8 +154,7 @@ have been provided to help you understand what this means.
 
 Assignment | Points
 ------------ | -------------
-Project Proposal | 15
-Group Project | 25
+Project  | 50
 Programming Assignments (10 @ 20 points each) | 200
 Homework Assignments (10 @ 10 points each) | 100
 In-Class Assignments (5 @ 5 points each) | 25 
@@ -164,11 +166,11 @@ Final Exam (25/50) | 75
 
 Range (%) | grade 
 ------------ | -------------
-90 >= | A
-80 >= | B
-70 >= | C
-60 >= | D
-60 < | F
+ >= 90 | A
+ >= 80 | B
+ >= 70 | C
+ >= 60 | D
+  < 60 | F
 * Grading is not curved.  89.99 is a B.
 
 
@@ -202,23 +204,25 @@ Dec 09 | End of Fall Semester
 ## 16 Week Semester Schedule  
 Week | Topics | Reading | Assignments
  ------------- | ------------- | ------------- | -------------
-1 | Intro. to Course | Ch. 1 | 
-2 | Java Fundamentals | Ch. 2 | HW 1
-3 | Decision Structures | Ch. 3 | PA 1
-4 | Loops and Files | Ch. 4 | HW 2, PA 2
-5 | Methods  | Ch. 5 | 
-6 | Classes | Ch. 6 | HW 3, PA 3
-7 | Arrays and the ArrayList Class | Ch. 7 | HW 4, PA 4
-8 | Classes and Objects | Ch. 8 | HW 5
+1 | Intro. to Computer Systems | Ch. 1 | 
+2 | Bytes and Beyond | Ch. 2 | HW 1
+3 | Computer Arithmetic | Ch. 3 | PA 1
+4 | Logic Gates & Circuits | Ch. 4 | HW 2, PA 2
+5 | Logic Circuits  | Ch. 5 | 
+6 | CPU | Ch. 6 | HW 3, PA 3
+7 | Programming Assembly | Ch. 7 | HW 4, PA 4
+8 | Program Data | Ch. 8 | HW 5
 9 | MidTerm | **Bring ScanTron** | PA 5
-10 | Text Processing  | Ch. 9 | 
-11 | Inheritance | Ch. 10 | HW 6, PA 6
-12 | Exceptions and Advanced File I/O | Ch. 11 | HW 7, PA 7
-13 | GUI Applications | Ch. 12 | HW 8, PA 8
-14 | Advanced GUI/Applets | Ch. 13, 14 | HW 9, PA 9
-15 | Project Due | Ch. 19 - 20 | HW 10, PA 10
-16 | Finals Week | | 
- |  Final Exam Tues., Dec. 5 from 10:00 am - 11:50 am | **Bring ScanTron** | 
+10 | Computer Operations  | Ch. 9 | 
+11 | Program Flow | Ch. 10 | HW 6, PA 6
+12 | Functions | Ch. 11 | HW 7, PA 7
+13 | Operations and Data Structure| Ch. 12 & 13 | HW 8, PA 8
+14 | Fractionals | Ch. 14 | HW 9, PA 9
+15 | Interrupts and Exceptions | Ch. 15 | HW 10, PA 10
+16 | Input/Output | Ch. 16 | HW 10, PA 10
+17 | Finals Week |  | 
+ |  Final Exam Thurs., Dec. 7 from 2:00 pm - 3:50 pm | **Bring ScanTron** | 
 
 ### Read the material for the week before class
 ### This syllabus is tentative and subject to change
+### Log into Canvas for course announcments and updates
