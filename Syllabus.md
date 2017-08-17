@@ -73,11 +73,12 @@ Final Exam (25/50) | 75
 
 Range (%) | grade 
 ------------ | -------------
- >= 90 | A
- >= 80 | B
- >= 70 | C
- >= 60 | D
- <= 59 | F
+ >= 90 | A  
+ >= 80 | B  
+ >= 70 | C  
+ >= 60 | D  
+ <= 59 | F  
+
 * Grading is not curved.  89.99 is a B.
 
 ## Exams, Assignments, and Late Policy 
