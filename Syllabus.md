@@ -135,5 +135,5 @@ Students with disabilities needing accommodation, including those who had an IEP
 Attendance is mandatory. The school policy allows up to 2 weeks of absences before I am required to drop you. If you are tardy, you will be assessed an absences for every 2 tardies. The attendance policy as outlined in the campus catalog. Students must notify me in the event of class absences.  Any student that is absent for more than two weeks without prior instructor notification may be dropped from the course. If you do not want to be in the class then you must drop yourself from the course.  I will not retroactively drop you if you miss one of the “last day” to drop the course dates.  These dates are listed in the colleges academic calendar under [Important Dates](https://www.bakersfieldcollege.edu/important-dates). It is also expected that students will notify me before class in the rare instance of needing to leave class early.  Students, not notifying me in advance, may be marked absent upon their early departure.
 
 ### Read the material for the week before class
-### This syllabus is TENTATIVE and subject to change
+### This syllabus is tentative and subject to change
 ### Log into Canvas for course announcments and updates
