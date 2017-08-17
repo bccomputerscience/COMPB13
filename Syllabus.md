@@ -71,13 +71,13 @@ Final Exam (25/50) | 75
 **TOTAL** | **550**
 * The number of actual assignments given may vary depending on the pace of the semester. If this occurs the points will be adjusted accordingly.
 
-Range (%) | grade 
------------- | -------------
- >= 90 | A  
- >= 80 | B  
- >= 70 | C  
- >= 60 | D  
- <= 59 | F  
+Range (%) | Grade 
+|------- | -------- |
+| >= 90 | A  |
+| >= 80 | B  |
+| >= 70 | C  |
+| >= 60 | D  |
+| <= 59 | F  |
 
 * Grading is not curved.  89.99 is a B.
 
