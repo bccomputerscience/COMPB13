@@ -127,7 +127,7 @@ Week | Topics | Reading | Assignments
 15 | Interrupts and Exceptions | Ch. 15 | HW 10, PA 10
 16 | Input/Output | Ch. 16 | HW 10, PA 10
 17 | Finals Week |  | 
- |  Final Exam Thurs., Dec. 7 from 2:00 pm - 3:50 pm | **Bring ScanTron** | 
+|  |  Final Exam Thurs., Dec. 7 from 2:00 pm - 3:50 pm | **Bring ScanTron** | 
 
 ## Accommodations 
 Students with disabilities needing accommodation, including those who had an IEP in high school, should make requests to Disabled Students Programs and Services in CSS 10, or Delano room 1001 (661-395-4334, (661-720-2000 Delano)).  All requests for accommodations require appropriate advance notice to avoid a delay in services. Please discuss approved accommodations with me so we can work together to ensure your access and success at BC
