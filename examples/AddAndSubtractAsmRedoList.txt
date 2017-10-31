@@ -1,0 +1,107 @@
+GAS LISTING AddAndSubtractAsmRedo.s 			page 1
+
+
+   1              	#   AddAndSubtractAsm.s
+   2              	#   Eddie Rangel
+   3              	
+   4              	# Stack Frame
+   5              	
+   6              	    .equ    w, -16
+   7              	    .equ    x, -12
+   8              	    .equ    y, -8
+   9              	    .equ    z, -4
+  10              	    .equ    localSize, -16
+  11              	
+  12              	# Read only data
+  13              	
+  14              	    .section    .rodata
+  15              	prompt:
+  16 0000 456E7465 	    .string "Enter two integers: "
+  16      72207477 
+  16      6F20696E 
+  16      74656765 
+  16      72733A20 
+  17              	getData:
+  18 0015 25692025 	    .string "%i %i"
+  18      6900
+  19              	display:
+  20 001b 73756D20 	    .string "sum = %i, difference = %i\n"
+  20      3D202569 
+  20      2C206469 
+  20      66666572 
+  20      656E6365 
+  21              	warning:
+  22 0036 4F766572 	    .string "Overflow has occurred.\n"
+  22      666C6F77 
+  22      20686173 
+  22      206F6363 
+  22      75727265 
+  23              	
+  24              	# Code
+  25              	    .text
+  26              	    .globl main
+  27              	    .type main, @function
+  28              	main:
+  29 0000 55       	    pushq   %rbp    # save caller's base pointer
+  30 0001 4889E5   	    movq    %rsp, %rbp  # establish our base pointer
+  31 0004 4883C4F0 	    addq    $localSize, %rsp    # Carve out space for local variables
+  32              	
+  33 0008 BF000000 	    movl    $prompt, %edi   # prompt user
+  33      00
+  34 000d B8000000 	    movl    $0, %eax        # no floats
+  34      00
+  35 0012 E8000000 	    call printf
+  35      00
+  36              	
+  37 0017 488D55F4 	    leaq    x(%rbp), %rdx   # &x
+  38 001b 488D75F0 	    leaq    w(%rbp), %rsi   # &w
+  39 001f BF000000 	    movl    $getData, %edi  # Get user data
+  39      00
+  40 0024 B8000000 	    movl    $0, %eax    # no floats
+GAS LISTING AddAndSubtractAsmRedo.s 			page 2
+
+
+  40      00
+  41 0029 E8000000 	    call scanf
+  41      00
+  42              	
+  43 002e 8B45F0   	    movl    w(%rbp), %eax   # load w
+  44 0031 8945F8   	    movl    %eax,   y(%rbp) # y = w
+  45 0034 8B45F4   	    movl    x(%rbp), %eax   # load x
+  46 0037 0145F8   	    addl    %eax, y(%rbp)   # y = w + x
+  47 003a 710F     	    jno     nOver1      # skip warning if no OF
+  48 003c BF000000 	    movl    $warning, %edi
+  48      00
+  49 0041 B8000000 	    movl    $0, %eax
+  49      00
+  50 0046 E8000000 	    call    printf
+  50      00
+  51              	
+  52              	nOver1:
+  53 004b 8B45F0   	    movl    w(%rbp), %eax   # load w
+  54 004e 8945FC   	    movl    %eax,   z(%rbp) # z = w
+  55 0051 8B45F4   	    movl    x(%rbp), %eax   # load x
+  56 0054 2945FC   	    subl    %eax, z(%rbp)   # z = w - x
+  57 0057 710F     	    jno     nOver2      # skip warning if no OF
+  58 0059 BF000000 	    movl    $warning, %edi
+  58      00
+  59 005e B8000000 	    movl    $0, %eax
+  59      00
+  60 0063 E8000000 	    call    printf
+  60      00
+  61              	
+  62              	nOver2:
+  63 0068 8B55FC   	    movl    z(%rbp), %edx   # load z
+  64 006b 8B75F8   	    movl    y(%rbp), %esi   # load y
+  65 006e BF000000 	    movl    $display, %edi  # display results
+  65      00
+  66 0073 B8000000 	    movl    $0, %eax    # no floats
+  66      00
+  67 0078 E8000000 	    call printf
+  67      00
+  68              	
+  69 007d B8000000 	    movl    $0, %eax    # return 0 to OS
+  69      00
+  70 0082 4889EC   	    movq    %rbp, %rsp  # restore stack pointer
+  71 0085 5D       	    popq    %rbp        # restore caller's base pointer
+  72 0086 C3       	    ret
